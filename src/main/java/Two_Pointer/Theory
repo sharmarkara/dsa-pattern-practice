@@ -1,0 +1,15 @@
+Array: An array is a collection of elements stored in contiguous memory locations,
+indexed starting from 0.
+
+Declaration & Initialization:
+
+Int[] arr= new int[5];
+int[] arr2= {1,2,3,4,5};
+
+Array patterns to remember:
+1. Two pointer Approach(For sorted Arrays & Pair Problems)
+Definition: The Two Pointer technique is an optimization method used to process pairs of elements
+in an array or string by using two pointers instead of nested loops.
+
+--> Helps reduce time complexity from O(N)^2---->O(N).
+--> Used for searching,sorting,merging,partition
