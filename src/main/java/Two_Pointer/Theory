@@ -1,15 +1,45 @@
-Array: An array is a collection of elements stored in contiguous memory locations,
-indexed starting from 0.
+-->Two Pointer: The two pointer is an optimization method used to process pairs of elements
+in an array or string by using two pointers instead of using nested loops.
 
-Declaration & Initialization:
+>> Help reduce time complexity from O(N)^2 --->O(N).
+>> Used for searching, sorting, merging, partitioning, and subarray problems.
 
-Int[] arr= new int[5];
-int[] arr2= {1,2,3,4,5};
+-->Types of two pointer approach
+1. Opposite direction pointers:
+    * Used when dealing with sorted arrays.
+    * Common for finding pairs(e.g., sum problems,palindrome, two-sum in sorted array).
 
-Array patterns to remember:
-1. Two pointer Approach(For sorted Arrays & Pair Problems)
-Definition: The Two Pointer technique is an optimization method used to process pairs of elements
-in an array or string by using two pointers instead of nested loops.
+2. Same direction pointers:
+    * Used for traversing and modifying elements efficiently.
+    * Common in merging, removing duplicates, and longest subarray problems.
 
---> Helps reduce time complexity from O(N)^2---->O(N).
---> Used for searching,sorting,merging,partition
+--> Opposite direction two pointer example:
+* Problem: Check if a given string is palindrome.
+
+Approach:
+1. Use two pointers: left pointer(l) at the beginning and right pointer(r) at the end.
+2. Compare characters at both pointers.
+3. Move pointers inward until they meet.
+
+Time complexity: O(N)
+Space complexity: O(1)
+
+--> Same direction two pointer example:
+* Problem: remove duplicates from a sorted array in-place and return the new length.
+
+Approach:
+
+1. Use two pointers:
+    * i(slow pointer) tracks the last unique element.
+    * j(fast pointer) scans for new unique elements.
+
+2. When arr[j] =/ arr[i], move the unique element forward.
+
+Time complexity: O(N)
+Space complexity: O(1)
+
+** Key points to Remember:
+-->  Two pointers optimize O(N)^2 problems to O(N).
+-->  Use opposite pointers for sum/palindrome problems.
+-->  Use same-directions pointers for merging and modifying.
+-->  Works best with sorted arrays and contiguous subarrays.
